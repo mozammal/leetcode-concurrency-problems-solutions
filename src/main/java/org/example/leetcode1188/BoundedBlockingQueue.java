@@ -5,16 +5,11 @@ import java.util.concurrent.locks.ReentrantLock;
 
 final class BoundedBlockingQueue {
   private final ReentrantLock lock;
-
   private int count;
-
   private final Condition notFull;
-
   private final Condition notEmpty;
-
   private int head;
   private int tail;
-
   private final int[] items;
 
   BoundedBlockingQueue(int capacity) {
