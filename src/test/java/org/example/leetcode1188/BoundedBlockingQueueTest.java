@@ -13,7 +13,6 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class BoundedBlockingQueueTest {
   private static final long TIMEOUT = 1000;
   private static final int N = 20;
-
   private static final int ITERATIONS = 1000;
 
   @Test
